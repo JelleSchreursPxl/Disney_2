@@ -1,0 +1,18 @@
+{% extends 'home.html.twig' %}
+{% block title %}Voice Actors{% endblock %}
+{% block body %}
+    <div class="container-fluid mt-lg-5">
+        <div class="row row-cols-3 g-4">
+            {% for character in characters %}
+                <div class="col">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">{{character.getMovieTitle}}</h5>
+                            <h6 class="card-subtitle">{{character.getVoiceActor}}</h6>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

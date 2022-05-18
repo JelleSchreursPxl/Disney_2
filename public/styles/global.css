@@ -1,0 +1,52 @@
+/* Disney Classic color scheme */
+:root{
+    --classicDisneyDarkBlue: #12194a;
+    --classicDisneyBlue: #393E8f;
+    --classicDisneyPink: #efbeb7;
+    --classicDisneyRed: #B12228;
+    --classicDisneyYellow: #f3cc64;
+
+
+    /* Overall color pallet */
+    --primaryTextColor: #231f20;
+    --secondaryTextColor: #acacac;
+    --white: #fff;
+}
+
+ /* Global styling */
+.html {
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    width: 1320px;
+    margin: auto !important;
+}
+
+.card {
+    background-color: var(--white) !important;
+    padding: 8px 0 16px 0 !important;
+}
+
+.card-title, .card-subtitle {
+    margin-left: 8px !important;
+}
+
+.disney_voices {
+    height: 56px;
+}
+
+.disney_characters {
+    max-width: 620px !important;
+    box-sizing: border-box;
+}
+
+.card-text{
+    padding-left: 8px !important;
+}
+
+.card-subtitle {
+    color: var(--secondaryTextColor) !important;
+}
+
+.bg-light {
+    background-color: var(--white) !important;
+}

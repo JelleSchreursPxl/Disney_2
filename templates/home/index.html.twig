@@ -1,0 +1,124 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Welcome to Disney{% endblock %}
+
+{% block body %}
+    <img src="{{ asset('images/disneyuniverse.jpg') }}" class="img-fluid mt-3" alt="disney universe">
+    <div class="container card-img-overlay top-50 my-5">
+        <h1 class="fw-bold">
+            Disney characters you expect
+            <br>
+            & so much more too know
+        </h1>
+        <figure>
+            <blockquote class="blockquote">
+                <p>Laughter is timeless, imagination has no age, dreams are forever.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                by <cite title="Source Title">Walt Disney</cite>
+            </figcaption>
+        </figure>
+        <form class="form-inline">
+            <a class="btn btn-primary" href="{{ path('login') }}">Disney voices</a>
+            <a class="btn btn-outline-primary mx-1" href="{{ path('register') }}">Register</a>
+        </form>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="container mt-5 d-flex-row">
+        <h1 class="fw-bold"> The assignment.</h1>
+        <figure>
+            <blockquote class="blockquote">
+                <p>Let us study things that are no more. It is necessary to understand them, if only to avoid them.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                by <cite title="Source Title">Victor Hugo</cite>
+            </figcaption>
+        </figure>
+        <section>
+            <article>
+                <h6 class="fw-bold">Group assignment</h6>
+                <p> Create a database in MySql for this subject. The subject is free to choose. This resulted in Disney characters and voice actors.
+                    The welcome page is going to be static and the developers are listed on this page down below. There is no interaction with the database whatsoever.
+                    In this page all the figures are being loaded with the assistance of the function asset. The layout has been produced with Bootstrap and thereby it's responsive.
+                    The rest of the assigment can be found behind the button: "Disney voices".
+                </p>
+            </article>
+        </section>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="container mt-5 d-flex-row text-center my-5">
+        <h1 class="fw-bold"> Meet the developers.</h1>
+        <figure>
+            <blockquote class="blockquote">
+                <p>I always say Zoo, it's shorter than animal park.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                by <cite title="Source Title">Tom Appeltants</cite>
+            </figcaption>
+        </figure>
+    </div>
+    <section class="container mt-5 d-flex align-items-center justify-content-center">
+        <div class="d-flex-row">
+                <div class="card mb-3 disney_characters h-100">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="{{ asset('images/MikeWazowski.jpg') }}" class="img-fluid rounded-start" alt="Mike Wazowski">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h4 class="card-title">Tom Appeltants</h4>
+                                <p class="card-subtitle mb-3">The one that keeps it all together</p>
+                                <p class="card-text">Michael Wazowski also known as Mike, is a main character in Monsters, Inc. and the main character of its prequel Monsters University. He is a short, lime green spherical monster with one large green eye, two small horns on his head, and thin arms and legs attached to either side of his torso.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 disney_characters h-100">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="{{ asset('images/syndrome.jpg') }}" class="img-fluid rounded-start" alt="Syndrome">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h4 class="card-title">Kurt Clemens</h4>
+                                <p class="card-subtitle mb-3">The one with crazy mind spinnings</p>
+                                <p class="card-text">Syndrome is a genius with buckteeth, a long chin, and long hair that sticks upwards like fire.
+
+                                    As a young boy, Buddy proclaimed himself to be a huge fan of Mr. Incredible and wanted to be his sidekick "Incrediboy". However, Mr. Incredible kept angrily telling Buddy he doesn't need his help.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 disney_characters h-100">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="{{ asset('images/WreckItRalph.png') }}" class="img-fluid rounded-start" alt="Wreck It Ralph">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h4 class="card-title">Jelle Schreurs</h4>
+                                <p class="card-subtitle mb-3">The one that breaks it all</p>
+                                <p class="card-text">He is the hulking “bad-guy” of the 8-bit video game Fix-It Felix Jr.. After 30 years of doing the same job and receiving no recognition, Ralph embarked on a game-jumping adventure across Litwak's Arcade in hopes of earning a medal and becoming a "good-guy".</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <br>
+{% endblock %}
+

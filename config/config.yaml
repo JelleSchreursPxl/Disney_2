@@ -1,0 +1,25 @@
+knp_snappy:
+  process_timeout: 20
+  pdf:
+    enabled:    true
+    binary:     /usr/local/bin/wkhtmltopdf #"\"C:\\Program Files\\wkhtmltopdf\\bin\\wkhtmltopdf.exe\"" for Windows users
+    options:    []
+  image:
+    enabled:    true
+    binary:     /usr/local/bin/wkhtmltoimage #"\"C:\\Program Files\\wkhtmltopdf\\bin\\wkhtmltoimage.exe\"" for Windows users
+    options:    []
+
+#doctrine:
+#  dbal:
+#    driver:   pdo_mysql
+#    host:     "%database_host%"
+#    port:     "%database_port%"
+#    dbname:   "%database_name%"
+#    user:     "%database_user%"
+#    password: "%database_password%"
+#    charset:  UTF8
+#    # Options for SSL connection
+#    options:
+#      MYSQL_ATTR_SSL_CA: %ca_cert%
+#      MYSQL_ATTR_SSL_KEY: %private_key%
+#      MYSQL_ATTR_SSL_CERT: %public_cert%

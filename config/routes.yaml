@@ -1,3 +1,43 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+index:
+  path: /
+  controller: App\Controller\HomeController::index
+
+login:
+  path: /login
+  controller: App\Controller\AppSecurityController::login
+
+register:
+  path: /register
+  controller: App\Controller\RegistrationController::register
+
+voice_actors:
+  path: /voice_actors
+  controller: App\Controller\VoiceActorController::listAction
+
+#pdf:
+#  path: /voice_actors/pdf
+#  controller: App\Controller\VoiceActorController::pdfAction
+
+add:
+  path: /voice_actors/add
+  controller: App\Controller\VoiceActorController::add
+
+select:
+  path: /voice_actors/select
+  controller: App\Controller\VoiceActorController::select
+
+update:
+  path: /voice_actors/update
+  controller: App\Controller\VoiceActorController::updateVoiceActor
+
+search:
+  path: /voice_actors/search
+  controller: App\Controller\VoiceActorController::searchBy
+
+delete:
+  path: /voice_actors/delete
+  controller: App\Controller\VoiceActorController::delete
+
+logout:
+  path: /logout
+  controller: App\Controller\AppSecurityController::logout
